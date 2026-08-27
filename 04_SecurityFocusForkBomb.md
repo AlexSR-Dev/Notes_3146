@@ -36,13 +36,13 @@ only a maximum number of processes can be tracked at once.
 
 - Thus, the fork bomb immediately fills every slot, and when its full the OS can no longer create any new processes.
 Not full of malicious or legitimate processes.
-- Thus, the system typically crashes or becomes unresponsive as it can't lanuch anything new.
+- Thus, the system typically crashes or becomes unresponsive as it can't launch anything new.
 
 
 
 
 
-Why This is Called a "Denial of Service" Attacl:
+Why This is Called a "Denial of Service" Attack:
 A fork bomb is classified as Denial of Service (DoS) attack.
 - Prevents legitimate users from operating the system when they need to.
 - Attacks the availability, but the attcaks isn't necessarily trying to steal data (confidentiality) or
