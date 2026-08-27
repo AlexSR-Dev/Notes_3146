@@ -158,6 +158,8 @@ if (id == -1) {
   std::cout << "I just became a parent!\n";
 }
 
+- Requires the file <unistd.h> to access execvp.
+
 Walkthrough:
 - fork() splits execution in a parent branch and a child branch.
 - In the child branch (id == 0), instead of printing, the child calls execvp(args[0], args).
