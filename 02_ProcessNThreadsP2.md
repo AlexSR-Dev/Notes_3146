@@ -130,6 +130,26 @@ Walkthrough:
 The return value of fork() provides a manner for the parent and child to diverge right after the fork.
 
 
+EX:
+for (int i = 0; i < 2; ++i>) {
+  fork();
+}
+- P0 is the initial process that enacts the for loop.
+- p1 is the first iteration that calls a fork() function and becomes a parent that immediately creates a process, resulting in a child process p3.
+- p2 is the second iteration that calls a fork(), but doesn't call a 
+
+
+EX:
+if (fork()) {
+  cout << "a";
+} else {
+  cout << "b";
+}
+- P0 the itnital process that enacts the if statement.
+- P0 calls fork() and creates a child process that returns its process ID which is a positive and returns the first statement.
+- Right after the parent process, the child continues right after where the parent process left, which is the if statement, and since a child process doesn't get a process id returned
+then it will receive 0, which is the second statement.
+- Therefore the if statement is enacted twice from the parent and child process, however based on the return values of these process only one statement is executed.
 
 
 
