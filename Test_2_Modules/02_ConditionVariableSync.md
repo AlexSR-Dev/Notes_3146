@@ -28,7 +28,7 @@ Thread 3 → third portion
 - All threads perform the same "sum my portion" function.
 
 NOTE:
-Data decomposition = divide the data among threads.
+Data decomposition = divide the data among threads, doesn't have to be even/fairly distributed.
 
 
 
