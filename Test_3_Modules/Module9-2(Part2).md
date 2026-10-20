@@ -128,6 +128,9 @@ Scalability Limitation:
 - As the ring grows, a message may need to traverse more intermediate nodes. Thus increasing the path length and possible communication 
 delay. Resulting in slowness.
 
+NOTE: The maximum number of intermediate computers between two computers may need to go through with n computers.
+- At most (n-2) intermediate computers.
+
 
 3.3.2) Star Topology
 - Each computer connects through an individual link to a central device.
