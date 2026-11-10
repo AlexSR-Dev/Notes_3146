@@ -226,7 +226,7 @@ headers.
 - Is the unit of data associated with a particular networking layer. Since data moves down the stack, each layer handles the unit
 provided by the layer above and may add its own protocol information.
 
-Protocol Units of each Layer:
+Protocol Data Units (PDUs) of each Layer:
 • Application Layer - Application protocol data unit (APDU) (The message)
 • Transport Layer - Segment
 • Network Layer - Packet
